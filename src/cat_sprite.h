@@ -1,3 +1,5 @@
+#pragma once
+
 // 'IMG_4636', 64x64px
 const unsigned char idle2 [] PROGMEM = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -316,7 +318,9 @@ const unsigned char boxSleep3 [] PROGMEM = {
 	0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xc0, 0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xc0
 };
 
-// Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 1584)
+/*
+ * ANIMATION ARRAYS
+ */
 const int boxSleep_allArray_LEN = 4;
 const unsigned char* boxSleep_allArray[4] = {
 	boxSleep1,
@@ -324,8 +328,6 @@ const unsigned char* boxSleep_allArray[4] = {
 	boxSleep3,
  boxSleep2
 };
-
-
 
 const int swish_allArray_LEN = 6;
 const unsigned char* swish_allArray[6] = {
@@ -336,8 +338,6 @@ const unsigned char* swish_allArray[6] = {
 	swish2,
 	swish1
 };
-
-
 
 const int blink_allArray_LEN = 4;
 const unsigned char* blink_allArray[4] = {
